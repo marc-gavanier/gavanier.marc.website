@@ -1,0 +1,65 @@
+{
+  "name": "marc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest",
+    "lint:code:fix": "pnpm exec biome check --write",
+    "lint:code:ci": "pnpm exec biome ci",
+    "lint:commit": "commitlint --from origin/main",
+    "lint:architecture": "depcruise src && folderslint",
+    "doc:architecture": "depcruise src --include-only \"^src\" --output-type dot | dot -T svg > dependency-graph.svg",
+    "i18n:interface": "i18next-resources-for-ts interface -i public/locales/en-US -o @types/resources.d.ts",
+    "prepare": "husky",
+    "postinstall": "pnpm i18n:interface"
+  },
+  "contributors": [
+    {
+      "name": "Marc Gavanier",
+      "email": "marc.gavanier@gmail.com",
+      "url": "https://www.linkedin.com/in/marc-gavanier/"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.4",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@storybook/addon-a11y": "^10.0.6",
+    "@storybook/addon-docs": "^10.0.6",
+    "@storybook/addon-onboarding": "^10.0.6",
+    "@storybook/addon-styling-webpack": "^2.0.0",
+    "@storybook/addon-vitest": "^10.0.6",
+    "@storybook/nextjs-vite": "^10.0.6",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "@vitest/browser": "4.0.8",
+    "@vitest/browser-playwright": "4.0.8",
+    "@vitest/coverage-v8": "4.0.8",
+    "dependency-cruiser": "^17.1.0",
+    "folderslint": "^1.2.0",
+    "husky": "^9.1.7",
+    "i18next-resources-for-ts": "^1.7.4",
+    "lint-staged": "^16.2.6",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.16",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "daisyui": "^5.3.9",
+    "i18next": "^25.6.0",
+    "next": "^16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}
