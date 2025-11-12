@@ -40,7 +40,7 @@ The website itself is built with a simple and modern stack focused on performanc
 - **Framework**: [Next.js](https://nextjs.org)
 - **Language**: [TypeScript](https://www.typescriptlang.org)
 - **Styling**: [TailwindCSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
-- **Deployment**: Static website hosted on AWS S3
+- **Deployment**: Static website hosted on GitHub Pages
 
 This setup reflects the kind of **modern, scalable architecture** I often use in client projects.
 

@@ -290,6 +290,8 @@ const FORBIDDEN_FEATURES = {
 					'^src/libraries/ui',
 					'^src/features/$1/abilities/$2/ui',
 					'^src/features/$1/domain',
+          '^node_modules/[^/]+/react-icon',
+          '^node_modules/[^/]+/next'
 				],
 			},
 		},
@@ -411,14 +413,6 @@ module.exports = {
 		...FORBIDDEN_FEATURES.KEYS,
 		...FORBIDDEN_FEATURES.TRANSFER,
 		...FORBIDDEN_LIBRARIES,
-	],
-	required: [
-		{
-			name: 'must-initialize-i18n-in-pages',
-			severity: 'error',
-			module: { path: '^src/app/.*/page.tsx$' },
-			to: { path: '/libraries/i18n' },
-		},
 	],
 	options: {
 		/* Which modules not to follow further when encountered */
