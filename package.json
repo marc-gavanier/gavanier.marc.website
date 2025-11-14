@@ -29,12 +29,12 @@
   "@commitlint/config-conventional": "^20.0.0",
   "@tailwindcss/postcss": "^4.1.17",
   "@tailwindcss/typography": "^0.5.19",
-  "@types/node": "^24.10.0",
-  "@types/react": "^19.2.3",
-  "@types/react-dom": "^19.2.2",
-  "@vitejs/plugin-react": "^5.1.0",
-  "@vitest/browser": "4.0.8",
-  "@vitest/coverage-v8": "4.0.8",
+  "@types/node": "^24.10.1",
+  "@types/react": "^19.2.4",
+  "@types/react-dom": "^19.2.3",
+  "@vitejs/plugin-react": "^5.1.1",
+  "@vitest/browser": "4.0.9",
+  "@vitest/coverage-v8": "4.0.9",
   "dependency-cruiser": "^17.1.0",
   "folderslint": "^1.2.0",
   "husky": "^9.1.7",
@@ -44,17 +44,17 @@
   "tailwindcss": "^4.1.16",
   "tailwindcss-animate": "^1.0.7",
   "typescript": "^5.9.3",
-  "vitest": "^4.0.3"
+  "vitest": "^4.0.9"
  },
  "dependencies": {
   "clsx": "^2.1.1",
-  "daisyui": "^5.5.0",
+  "daisyui": "^5.5.4",
   "i18next": "^25.6.2",
-  "next": "^16.0.0",
+  "next": "^16.0.3",
   "next-themes": "^0.4.6",
   "react": "19.2.0",
   "react-dom": "19.2.0",
   "react-icons": "^5.5.0",
-   "tailwind-merge": "^3.3.1"
+  "tailwind-merge": "^3.3.1"
  }
 }
