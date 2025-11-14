@@ -4,7 +4,7 @@ import { Navbar } from '@/features/presentation/abilities/layout/ui/components/n
 import { ThemeProvider } from '@/libraries/ui/theme/providers';
 
 export default ({ children }: { children: ReactNode }) => (
-  <html lang='fr' data-theme='dark' suppressHydrationWarning>
+  <html lang='fr' data-theme='light' suppressHydrationWarning>
     <body>
       <ThemeProvider attribute='data-theme' defaultTheme='light' enableSystem disableTransitionOnChange>
         <Navbar />
