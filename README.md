@@ -14,6 +14,7 @@ The website highlights my **skills**, **services**, **methodologies**, and **tec
 - 🪧 [About](#about)
 - 💼 [Professional Focus](#focus)
 - ⚙️ [Tech Stack](#stack)
+- 🌟 [Inspirations](#inspirations)
 - 🤝 [Contact](#contact)
 - 🤗 [Contributing](#contributing)
 - 📝 [License](#license)
@@ -43,6 +44,24 @@ The website itself is built with a simple and modern stack focused on performanc
 - **Deployment**: Static website hosted on GitHub Pages
 
 This setup reflects the kind of **modern, scalable architecture** I often use in client projects.
+
+---
+
+<h2 id="inspirations">🌟 Inspirations</h2>
+
+This website was inspired in part by the design, simplicity, or content approach of the following personal websites:
+- https://tomgooden.net/
+- https://www.vancedesignsproducts.com/
+- https://www.joshwcomeau.com/
+- https://stratisbakas.com/
+- https://www.dalelarroder.com/
+- https://jeffreybetts.me/
+- https://akashrajpurohit.com/
+- https://gmorel.io/
+- https://alanred.me/
+- https://www.paulmowat.co.uk/
+- https://www.taniarascia.com/
+- https://userexe.me/
 
 ---
 
