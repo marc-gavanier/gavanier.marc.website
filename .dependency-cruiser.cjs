@@ -197,6 +197,8 @@ const FORBIDDEN_APP = [
 				'src/libraries',
 				'src/features',
 				'src/styles/globals.css',
+        'path',
+        'fs'
 			],
 		},
 	},

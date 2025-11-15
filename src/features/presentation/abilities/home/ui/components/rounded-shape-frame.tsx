@@ -1,10 +1,8 @@
 import Image, { type ImageProps } from 'next/image';
 
-type RoundedShapeFrameProps = Omit<ImageProps, 'alt'>;
-
-export const RoundedShapeFrame = (props: RoundedShapeFrameProps) => (
+export const RoundedShapeFrame = (props: ImageProps) => (
   <div className='relative w-full'>
-    <Image className='absolute w-full' {...props} alt='' />
+    <Image className='absolute w-full' {...props} />
     {/** biome-ignore lint/a11y/noSvgWithoutTitle: decorative element do not need title */}
     <svg className='w-full' viewBox='0 0 657 657' xmlns='http://www.w3.org/2000/svg'>
       <path d='m271 271 386 107.89L380.6 657 271 271Z' className='fill-primary' opacity='.1'></path>

@@ -1,4 +1,5 @@
 import { RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
+import { Link } from '@/libraries/ui/primitives/link';
 import { RoundedShapeFrame } from '../components/rounded-shape-frame';
 
 export const HomePage = () => (
@@ -6,7 +7,7 @@ export const HomePage = () => (
     <div className='lg:container mx-auto px-16 lg:px-8 xl:px-16 2xl:px-32'>
       <div className='md:flex gap-12 my-20'>
         <div className='flex-2/5 order-first md:order-last flex justify-center max-w-4/5 mx-auto'>
-          <RoundedShapeFrame width={438} height={526} src='/images/home/profil-picture.min.png' />
+          <RoundedShapeFrame width={438} height={526} src='/images/home/profil-picture.min.png' alt='' />
         </div>
         <div className='md:flex-3/5 text-center md:text-left'>
           <h1 className='text-4xl md:text-5xl font-normal py-10'>
@@ -24,56 +25,56 @@ export const HomePage = () => (
             <ul className='list-none space-y-2'>
               <li>
                 👤 Je place le métier au cœur de la conception logiciel grâce au{' '}
-                <a
+                <Link
                   href='https://martinfowler.com/bliki/DomainDrivenDesign.html'
                   target='_blank'
                   rel='noreferrer'
-                  className='text-primary hover:underline'
+                  className='text-primary'
                 >
                   domain-driven design
-                </a>
+                </Link>
               </li>
               <li>
                 ✨ Je créé des fonctionnalités maintenables en écrivant du{' '}
-                <a
+                <Link
                   href='https://medium.com/s/story/reflections-on-clean-code-8c9b683277ca'
                   target='_blank'
                   rel='noreferrer'
-                  className='text-primary hover:underline'
+                  className='text-primary'
                 >
                   code propre
-                </a>{' '}
+                </Link>{' '}
                 dans une{' '}
-                <a
+                <Link
                   href='https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html'
                   target='_blank'
                   rel='noreferrer'
-                  className='text-primary hover:underline'
+                  className='text-primary'
                 >
                   architecture claire
-                </a>
+                </Link>
               </li>
               <li>
                 🚀 J’améliore l’optimisation et la rapidité de mise en ligne grâce au{' '}
-                <a
+                <Link
                   href='https://www.martinfowler.com/bliki/TestDrivenDevelopment.html'
                   target='_blank'
                   rel='noreferrer'
-                  className='text-primary hover:underline'
+                  className='text-primary'
                 >
                   développement piloté par les tests
-                </a>
+                </Link>
               </li>
               <li>
                 🎉 Je déploie fréquemment et automatiquement dans le cloud selon la{' '}
-                <a
+                <Link
                   href='https://martinfowler.com/bliki/DevOpsCulture.html'
                   target='_blank'
                   rel='noreferrer'
-                  className='text-primary hover:underline'
+                  className='text-primary'
                 >
                   culture DevOps
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
