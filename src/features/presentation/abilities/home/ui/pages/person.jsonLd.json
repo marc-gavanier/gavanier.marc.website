@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.schema.org",
+  "@type": "person",
+  "@id": "https://marc.gavanier.com",
+  "name": "Marc Gavanier",
+  "gender": "male",
+  "url": "https://marc.gavanier.com",
+  "birthDate": "1990-02-03",
+  "birthPlace": "Paris, France",
+  "nationality": "Français",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Efrei",
+    "sameAs": ["https://www.efrei.fr", "https://fr.wikipedia.org/wiki/Efrei"]
+  },
+  "image": "https://marc.gavanier.com/images/home/jsonLd-image.jpg",
+  "jobTitle": "Ingénieur logiciel indépendant",
+  "description": "Ingénieur logiciel spécialisé en Domain-Driven Design, clean code, TDD, clean architecture et pratiques DevOps.",
+  "sameAs": [
+    "https://www.linkedin.com/in/marc-gavanier",
+    "https://github.com/marc-gavanier",
+    "https://gitlab.com/marc-gavanier"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lyon",
+    "postalCode": "69005",
+    "addressCountry": "France"
+  },
+  "email": "marc+website@gavanier.com"
+}
