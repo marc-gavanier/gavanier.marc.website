@@ -1,4 +1,4 @@
-import { RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
+import { RiCopyleftLine, RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
 import { Link } from '@/libraries/ui/primitives/link';
 import { RoundedShapeFrame } from '../components/rounded-shape-frame';
 
@@ -6,16 +6,24 @@ export const HomePage = () => (
   <main>
     <div className='lg:container mx-auto px-16 lg:px-8 xl:px-16 2xl:px-32'>
       <div className='md:flex gap-12 my-20'>
-        <div className='flex-2/5 order-first md:order-last flex justify-center max-w-4/5 mx-auto'>
+        <div className='flex-2/6 order-first md:order-last flex justify-center max-w-4/5 mx-auto'>
           <RoundedShapeFrame width={438} height={526} src='/images/home/profil-picture.min.png' alt='' />
         </div>
-        <div className='md:flex-3/5 text-center md:text-left'>
-          <h1 className='text-4xl md:text-5xl font-normal py-10'>
-            👋 Bonjour, je suis <span className='text-primary whitespace-nowrap'>Marc Gavanier</span>
+        <div className='md:flex-4/6 text-center md:text-left'>
+          <h1 className='text-4xl sm:text-5xl font-bold py-10 text-center md:text-left'>
+            <span className='inline-flex items-center gap-3'>
+              <span>👋</span>
+              <span className='md:inline-block inline-grid'>
+                Bonjour, je suis{' '}
+                <span className='bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-subtle)] whitespace-nowrap bg-clip-text text-transparent'>
+                  Marc Gavanier
+                </span>
+              </span>
+            </span>
           </h1>
           <p className='text-xl pb-6'>
-            Je suis ingénieur logiciel indépendant avec plus de {new Date().getFullYear() - 2013} ans d’expérience
-            professionnelle. Je conçois des produits numériques complexes selon les plus hauts standards de qualité.
+            Ingénieur logiciel indépendant avec plus de {new Date().getFullYear() - 2013} ans d’expérience professionnelle. Je
+            conçois des produits numériques complexes selon les plus hauts standards de qualité.
           </p>
           <div className='text-muted space-y-4'>
             <p>
@@ -97,7 +105,10 @@ export const HomePage = () => (
               <RiGithubFill className='text-2xl' aria-hidden={true} />
               <span className='sr-only'>Github</span>
             </a>
-            <span className='text-muted text-sm'>© {new Date().getFullYear()} Marc Gavanier</span>
+            <div className='text-muted text-sm flex items-center gap-1'>
+              <RiCopyleftLine />
+              <span>{new Date().getFullYear()} Marc Gavanier</span>
+            </div>
           </div>
         </div>
       </div>
