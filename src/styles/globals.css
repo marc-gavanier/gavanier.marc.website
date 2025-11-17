@@ -1,6 +1,7 @@
 /* biome-ignore-all lint: Biome does not support custom properties in CSS*/
 
 @import "tailwindcss";
+@import "./components/components.css";
 
 @plugin "tailwindcss-animate";
 
@@ -13,12 +14,13 @@
 }
 
 @theme {
-  --color-muted: oklch(0.7 0 90);
-  --color-base-400: oklch(0.85 0 90);
-  --color-base-500: oklch(0.8 0 90);
-  --color-primary-subtle: oklch(0.6 0.19 260);
-  --color-input: oklch(0.99 0.01 260);
-  --color-navbar: oklch(1 0 90);
+  --color-muted: #9e9e9e;
+  --color-base-400: #cecece;
+  --color-base-500: #bebebe;
+  --color-primary-subtle: #337aef;
+  --color-primary-surface: #e7f0fd;
+  --color-input: #f8fcff;
+  --color-navbar: #ffffff;
 }
 
 @plugin "daisyui/theme" {
@@ -32,7 +34,9 @@
   --color-base-500: #bebebe;
   --color-base-content: #000000;
   --color-primary: #0559d2;
+  --color-primary-surface: #ebf2fd;
   --color-primary-subtle: #4f97f7;
+  --color-secondary: #7daaec;
   --color-muted: #636363;
   --color-input: #f8fcff;
   --color-navbar: #ffffff;
@@ -48,8 +52,10 @@
   --color-base-400: #3a3a3a;
   --color-base-500: #484848;
   --color-base-content: #fafafa;
-  --color-primary: #6e69f3;
+  --color-primary: #7570f6;
   --color-primary-subtle: #5952d5;
+  --color-primary-surface: #1d1c2a;
+  --color-secondary: #b8bdff;
   --color-muted: #9e9e9e;
   --color-input: #0f0f0f;
   --color-navbar: oklch(0.23 0 0);

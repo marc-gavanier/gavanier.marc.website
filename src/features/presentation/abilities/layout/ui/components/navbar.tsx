@@ -1,15 +1,12 @@
 'use client';
 
-import Image from 'next/image';
-import { RiMenuLine } from 'react-icons/ri';
-import { ThemeChanger } from '@/libraries/ui/blocks/theme-changer';
 import { CollapseController } from '@/libraries/ui/headless/collapse-controller';
-import { Button } from '@/libraries/ui/primitives/button';
+import { Logo } from '@/libraries/ui/illustrations/logo';
 import { Link } from '@/libraries/ui/primitives/link';
 
 export const Navbar = () => (
   <CollapseController>
-    {({ toggle, collapsible }) => (
+    {() => (
       <div className='relative bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-subtle)]'>
         <nav className='text-primary-content'>
           <div className='lg:container mx-auto px-16 lg:px-8 xl:px-16 2xl:px-32 py-14 flex flex-col sm:flex-row justify-between'>
@@ -20,22 +17,20 @@ export const Navbar = () => (
                 className='font-bold text-xl text-base-title flex items-center gap-2'
                 kind='link-hover'
               >
-                <Image src='/images/logo/logo-white-64.svg' width={89} height={64} alt='Marc Gavanier logo' />
+                <Logo color='color-base-100' className='max-w-24' />
               </Link>
-
-              <Button kind='btn-ghost' className='px-2 sm:hidden' {...toggle}>
-                <RiMenuLine size={24} aria-hidden={true} />
-              </Button>
+              {/*<Button kind='btn-ghost' className='px-2 sm:hidden' {...toggle}>*/}
+              {/*  <RiMenuLine size={24} aria-hidden={true} />*/}
+              {/*</Button>*/}
             </div>
-            <div
-              {...collapsible({
-                className: 'collapse sm:collapse-open text-right'
-              })}
-            >
-              <div className='collapse-content p-0'>
-                <ThemeChanger />
-              </div>
-            </div>
+            {/*<div*/}
+            {/*  {...collapsible({*/}
+            {/*    className: 'collapse sm:collapse-open text-right'*/}
+            {/*  })}*/}
+            {/*>*/}
+            {/*  <div className='collapse-content p-0'>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         </nav>
         {/** biome-ignore lint/a11y/noSvgWithoutTitle: decorative element do not need title */}
