@@ -290,6 +290,7 @@ const FORBIDDEN_FEATURES = {
 				pathNot: [
 					'^src/libraries/i18n',
 					'^src/libraries/ui',
+					'^src/libraries/utils',
 					'^src/features/$1/abilities/$2/ui',
 					'^src/features/$1/domain',
           '^node_modules/[^/]+/react-icon',
