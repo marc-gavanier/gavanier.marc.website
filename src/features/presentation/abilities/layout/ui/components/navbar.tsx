@@ -1,36 +1,39 @@
 'use client';
 
+import Link from 'next/link';
+import { RiMenuLine } from 'react-icons/ri';
 import { CollapseController } from '@/libraries/ui/headless/collapse-controller';
 import { Logo } from '@/libraries/ui/illustrations/logo';
-import { Link } from '@/libraries/ui/primitives/link';
+import { Button } from '@/libraries/ui/primitives/button';
 
 export const Navbar = () => (
   <CollapseController>
-    {() => (
+    {({ toggle, collapsible }) => (
       <div className='relative bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-subtle)]'>
         <nav className='text-primary-content'>
           <div className='lg:container mx-auto px-16 lg:px-8 xl:px-16 2xl:px-32 py-14 flex flex-col sm:flex-row justify-between'>
-            <div className='flex gap-2 justify-between items-center'>
-              <Link
-                href='/'
-                title='Retour à l’accueil'
-                className='font-bold text-xl text-base-title flex items-center gap-2'
-                kind='link-hover'
-              >
-                <Logo color='color-base-100' className='max-w-24' />
+            <div className='flex gap-2 justify-between items-center '>
+              <Link href='/' title='Retour à l’accueil' className='font-bold text-xl text-base-title flex items-center gap-2'>
+                <Logo color='fbc-white' className='max-w-24' />
               </Link>
-              {/*<Button kind='btn-ghost' className='px-2 sm:hidden' {...toggle}>*/}
-              {/*  <RiMenuLine size={24} aria-hidden={true} />*/}
-              {/*</Button>*/}
+              <Button kind='btn-ghost' className='px-2 sm:hidden' {...toggle}>
+                <RiMenuLine size={24} aria-hidden={true} />
+              </Button>
             </div>
-            {/*<div*/}
-            {/*  {...collapsible({*/}
-            {/*    className: 'collapse sm:collapse-open text-right'*/}
-            {/*  })}*/}
-            {/*>*/}
-            {/*  <div className='collapse-content p-0'>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
+            <div
+              {...collapsible({
+                className: 'collapse sm:collapse-open text-right sm:pt-0 pt-8'
+              })}
+            >
+              <ul className='menu menu-horizontal collapse-content ml-0 sm:ml-auto p-0 sm:items-center flex-nowrap sm:flex-row flex-col gap-1'>
+                <li>
+                  <Link href='/contact' className='font-semibold'>
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+              <div className='collapse-content p-0'></div>
+            </div>
           </div>
         </nav>
         {/** biome-ignore lint/a11y/noSvgWithoutTitle: decorative element do not need title */}

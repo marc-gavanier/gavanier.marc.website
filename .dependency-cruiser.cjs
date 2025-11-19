@@ -289,11 +289,13 @@ const FORBIDDEN_FEATURES = {
 			to: {
 				pathNot: [
 					'^src/libraries/i18n',
+					'^src/libraries/form',
 					'^src/libraries/ui',
 					'^src/libraries/utils',
 					'^src/features/$1/abilities/$2/ui',
+					'^src/features/$1/abilities/$2/validations',
 					'^src/features/$1/domain',
-          '^node_modules/[^/]+/react-icon',
+          '^node_modules/[^/]+/react',
           '^node_modules/[^/]+/next'
 				],
 			},
@@ -400,7 +402,7 @@ const FORBIDDEN_LIBRARIES = [
 		from: { path: 'src/libraries/([^/]+)/' },
 		to: {
 			path: 'src/libraries',
-			pathNot: ['src/libraries/$1', 'src/libraries/utils'],
+			pathNot: ['src/libraries/$1', 'src/libraries/utils', 'src/libraries/ui'],
 		},
 	},
 ];

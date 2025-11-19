@@ -1,4 +1,4 @@
-import { RiCompass3Line } from 'react-icons/ri';
+import { RiCompass3Line, RiMailLine } from 'react-icons/ri';
 import { ButtonLink } from '@/libraries/ui/primitives/button-link';
 import { Link } from '@/libraries/ui/primitives/link';
 import { cn } from '@/libraries/utils';
@@ -27,16 +27,16 @@ export const HeroSection = ({ className }: { className?: string }) => (
         <strong>livrer rapidement des fonctionnalités utiles et à fort impact</strong>.
       </p>
       <div className='mb-12 flex flex-col sm:flex-row justify-center md:justify-start gap-2'>
-        {/*<Button scale='btn-lg' color='btn-primary'>*/}
-        {/*  <RiMailLine className='mr-1' aria-hidden={true} />*/}
-        {/*  Contactez-moi*/}
-        {/*</Button>*/}
+        <ButtonLink href='/contact' scale='btn-lg' color='btn-primary'>
+          <RiMailLine className='mr-1' aria-hidden={true} />
+          Entrez en contact
+        </ButtonLink>
         <ButtonLink href='#approach' scale='btn-lg' kind='btn-soft' color='btn-primary'>
           <RiCompass3Line className='mr-1' aria-hidden={true} />
           Découvrez mon approche
         </ButtonLink>
       </div>
-      <p className='font-light text-muted'>
+      <p className='text-muted'>
         Depuis 2021, j’accompagne principalement{' '}
         <Link href='https://anct.gouv.fr/' target='_blank' rel='noopener noreferrer'>
           l’Agence Nationale de la Cohésion des Territoires
