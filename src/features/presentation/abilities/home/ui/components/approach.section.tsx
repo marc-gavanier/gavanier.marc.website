@@ -12,7 +12,7 @@ export const ApproachSection = ({ className }: { className?: string }) => (
       <br />
       C’est une boucle continue, répétée jusqu’à converger vers le produit le plus utile et le plus efficace.
     </p>
-    <ul className='list rounded-box shadow-xl grid grid-cols-1 lg:grid-cols-2 py-4'>
+    <ul className='list rounded-box shadow-xl shadow-primary-surface grid grid-cols-1 lg:grid-cols-2 py-4'>
       <li className='flex gap-6 p-4'>
         <div className='text-4xl font-light text-primary'>1</div>
         <div className='list-col-grow'>

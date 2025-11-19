@@ -4,6 +4,7 @@ import { RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri';
 import { Navbar } from '@/features/presentation/abilities/layout/ui/components/navbar';
 import { type Category, Footer, FooterLegal, type FooterLink, FooterSocialLinks } from '@/libraries/ui/blocks/footer';
 import { ThemeChanger } from '@/libraries/ui/blocks/theme-changer';
+import { Toaster } from '@/libraries/ui/blocks/toaster';
 import { Logo } from '@/libraries/ui/illustrations/logo';
 import { ThemeProvider } from '@/libraries/ui/theme/providers';
 
@@ -24,8 +25,11 @@ export default ({ children }: { children: ReactNode }) => (
   <html lang='fr' data-theme='light' suppressHydrationWarning>
     <body>
       <ThemeProvider attribute='data-theme' defaultTheme='light' enableSystem disableTransitionOnChange>
-        <Navbar />
-        {children}
+        <Toaster directionY='toast-top' directionX='toast-center' />
+        <div className='flex flex-col min-h-screen'>
+          <Navbar />
+          {children}
+        </div>
         <Footer className='bg-base-200' categories={footerCategories}>
           <Logo color='color-base-500' className='max-w-40 pb-4' />
           <ThemeChanger />
